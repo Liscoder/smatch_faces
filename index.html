@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Smash Faces</title>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	  <link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<nav>
+			<h1>SMASH FACES</h1>
+		</nav>
+		<div class="container"> 
+		
+			<p>Bienvenidas al juego de Smash Faces, tu mision es poder identificar a todas tus compañeros de clase ingresando para ellos su nombre.Tienes 5 oportunidades antes de perder 1 punto y pasar a la siguiente</p>
+			<div class="col-md-12 col-xs-12">
+				<span class="col-md-8 col-xs-8" >Elige tu sede: </span> 
+				<div class="dropdown col-md-8 col-xs-8"> 
+					<select id="local">
+						<option value="0" selected="selected">Seleccione sede</option>
+						<option value="1">Mexico</option>
+						<option value="2">Peru</option>
+					</select>
+				</div>
+				<div class="text-right col-md-6 col-xs-6" >
+					<div>Puntos:</div>
+					<div id="puntos">0</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-xs-6 imagen" id="imagen">
+				
+			</div>
+			<div class="col-md-6 col-xs-6">
+				<input type="text" id="name_coder" placeholder="Escribe el nombre">
+				<button id="contrast">COMPROBAR</button>
+				<span class="resultado" id="resultado"></span>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-2.2.2.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/mexico.js"></script>
+		<script src="js/peru.js"></script> 
+		<script src="js/main.js"></script>
+	</body>
+</html>

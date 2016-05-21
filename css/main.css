@@ -1,0 +1,17 @@
+/* Inserta tu codigo aqui */
+nav{
+	background-color: #EAB10F;
+	text-align:center;
+	margin-top:0px;
+	color:white;
+}
+select{
+	background-color: #00B8FF;
+	color:white;
+}
+button{
+ background-color:#0E2831;
+ color:white;
+ border-radius:10px;
+ border-color:#0E2831;
+}

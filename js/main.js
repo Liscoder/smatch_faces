@@ -17,11 +17,8 @@ $(document).ready(function(){
  var total_puntuacion=0;
 
     $('#contrast').click(function(){
-
-      contador++;
-
     if(($('#name_coder').val()==random_peru.nam)||($('#name_coder').val()==random_mexico.nam)){
-        $('#resultado').text("EXCELENTE ACERTASTE");
+        $('#resultado').text("<br>"+"EXCELENTE ACERTASTE");
         total_puntuacion=total_puntuacion+5;
         $('#puntos').html(total_puntuacion);
         clean();
@@ -32,20 +29,18 @@ $(document).ready(function(){
     }
     else {
         contador++;
-        $('#resultado').text("SIGUE INTENTANDO");
+        $('#resultado').text("<br"+"SIGUE INTENTANDO");
         total_puntuacion--;
         $('#puntos').html(total_puntuacion);
         clean();
-        if(contador===4) {
+        if(contador===5) {
             random_peru= random(peru);
             random_mexico = random(mexico);
             $('#imagen').html("<img class= 'photograpy' src='fotos/peru/"+random_peru.image+"'/>");
-            contador=0;
-          }
+             contador=0;
+            }
         }
-   
   });
-
 });
 function random(arrays){
   var longitud=arrays.length;

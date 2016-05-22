@@ -14,4 +14,15 @@ button{
  color:white;
  border-radius:10px;
  border-color:#0E2831;
+ margin:4px 0;
+}
+input{
+	margin:5px 0;
+}
+img{
+	width:100%;
+}
+.resultado{
+	color: purple;
+	font-size:16px;
 }
